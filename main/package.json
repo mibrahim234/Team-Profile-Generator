@@ -1,0 +1,28 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "description": "Team profile generator",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mibrahim234/Team-Profile-Generator.git"
+  },
+  "author": "Mohammad Ibrahim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mibrahim234/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/mibrahim234/Team-Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  },
+  "devDependencies": {
+    "jest": "^27.2.5"
+  }
+}
