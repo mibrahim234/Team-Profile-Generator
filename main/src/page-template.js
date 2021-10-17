@@ -58,6 +58,60 @@ const generateTeam = team => {
         `;
     };
 
-const html = [];
+    const html = [];
 
+    html.push(team
+        .filter(employee => employee.getRole() === "Manager")
+        .map(manager => generateManager(manager))
+        );
+
+        html.push(team
+            .filter(employee => employee.getRole() === "Engineer")
+            .map(engineer => generateEngineer(engineer))
+            .join("")
+            );
+
+            html.push(team
+                .filter(employee => employee.getRole() === "Intern")
+                .map(intern => generateIntern(intern))
+                .join("")
+                );
+
+            return html.join("");
 }
+
+// export function to generate entire page 
+module.exports = team => {
+    return `
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Team</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c502137733.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-12 jumbotron mb-3 team-heading">
+            <h1 class="text-center">My Team</h1>
+        </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="team-area col-12 d-flex justify content-center">
+                ${generateTeam(team)}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+    `;
+};
