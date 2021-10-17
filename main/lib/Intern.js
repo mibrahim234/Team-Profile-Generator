@@ -7,6 +7,7 @@ class Intern extends Employee {
     }
 
     getRole() {
+        var role = "Intern";
         return "Intern";
     }
 
