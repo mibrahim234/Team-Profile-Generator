@@ -17,7 +17,6 @@ class Employee {
     }
 
     getRole() {
-        var role = "Employee";
         return "Employee";
     }
 }

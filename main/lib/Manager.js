@@ -7,7 +7,6 @@ class Manager extends Employee {
     }
 
     getRole() {
-        var role = "Manager";
         return "Manager";
     }
 
