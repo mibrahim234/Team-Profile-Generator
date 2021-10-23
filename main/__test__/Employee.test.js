@@ -1,3 +1,4 @@
+// remember to run tests from main folder and not test folder
 const Employee = require("../lib/Employee");
 
 test("Can instantiate Employee instance", () => {
