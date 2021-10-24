@@ -3,6 +3,7 @@
 https://mibrahim234.github.io/Team-Profile-Generator/
 ## Description 
 This app builds a Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person. Additionally, this application has been tested in units to make sure all of the code passes without errors. 
+<br> To use the application answer all the questions and then open the dist folder which will hold the html file. Once you open the html file, the webpage will be displayed with your team's information.
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)

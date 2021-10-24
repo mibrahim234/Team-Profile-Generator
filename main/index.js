@@ -8,12 +8,12 @@ const path = require('path');
 const fs = require('fs');
 
 // creates output folder 
-const OUTPUT_DIR = path.resolve(__dirname, "output");
+const OUTPUT_DIR = path.resolve(__dirname, "dist");
 // output path, puts html in output folder 
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 // requires page template 
 const render = require("./src/page-template");
-// put code in to these empty arrays and them pushing it to the output 
+// put code in to these empty arrays and then pushing it to the output 
 const teamMembers = [];
 const idArray = [];
 
@@ -83,6 +83,7 @@ function appMenu() {
                 createTeam();
             });
     }
+
     function createTeam() {
         inquirer
         .prompt([
@@ -250,7 +251,7 @@ function appMenu() {
     }
 
     function buildTeam() {
-        // create the output director if the output path doesn't exist 
+        // create the output directory if the output path doesn't exist 
         if (!fs.existsSync(OUTPUT_DIR)) {
             fs.mkdirSync(OUTPUT_DIR);
         }
