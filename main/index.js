@@ -242,7 +242,7 @@ function appMenu() {
                     answers.internName,
                     answers.internId,
                     answers.internEmail,
-                    answers.internGithub
+                    answers.internSchool
                 );
                 teamMembers.push(intern);
                 idArray.push(answers.internId);
