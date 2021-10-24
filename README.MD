@@ -15,7 +15,8 @@ This app builds a Node.js command-line application that takes in information abo
 To install this application go to https://github.com/mibrahim234/Team-Profile-Generator. Clone the repo by pressing the green button. User can clone using an SSH key or HTTPS key. User will also be able to download the zip file. User should open the integrated terminal from the index.js file and download the dependencies by typing npm i. npm i will install the dependencies and devdependencies from this application. 
 ## Usage 
  This application will be invoked by using: node index.js in the terminal.
- ""(Link that demonstrates functionality.)""
+  ![Team Profile Generator Screenshot](main/src/images/tpg.PNG)
+
 ## License
 Copyright (c) [2021]
 The license is MIT License. 
